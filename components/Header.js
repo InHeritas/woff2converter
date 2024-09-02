@@ -39,9 +39,9 @@ const Header = () => {
                     <Label style={{ margin: 5 }} variant="accent">
                         TIP
                     </Label>
-                    <p>woff2는 압축된 폰트 파일 형식으로,</p>
-                    <p>ttf, otf보다 작은 용량을 차지하며</p>
-                    <p>더 빠른 웹페이지 로딩을 가능하게 합니다.</p>
+                    <p className='tipText'>woff2는 압축된 폰트 파일 형식으로,</p>
+                    <p className='tipText'>ttf, otf보다 작은 용량을 차지하며</p>
+                    <p className='tipText'>더 빠른 웹페이지 로딩을 가능하게 합니다.</p>
                 </Box>
             </div>
         </header>
