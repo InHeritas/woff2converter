@@ -11,6 +11,7 @@ export default function Home() {
                 <meta charSet="utf-8" />
                 <title>WOFF2 Converter</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta name="theme-color" content="#ffffff" />
             </Head>
 
             <Header />
