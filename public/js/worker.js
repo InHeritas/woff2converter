@@ -445,7 +445,7 @@
         if ("init" === t.data) {
             const t = yield function () {
                 return n(this, void 0, void 0, (function* () {
-                    return fetch("converter.wasm").then(t => t.arrayBuffer()).then(t => {
+                    return fetch('/wasm/converter.wasm').then(t => t.arrayBuffer()).then(t => {
                         const e = new Uint8Array(t);
                         return s.createWoff2(e)
                     })

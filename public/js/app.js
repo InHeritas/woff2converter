@@ -308,7 +308,7 @@
                     }(s, l.byteLength)
                         , v = document.createElement("div");
                     v.classList.add("convert-summary"),
-                        v.innerHTML = `\n    <div>Size comparison: ${a} → ${f} (${m}%)</div>\n    <div>Process time: ${d}</div>\n    `,
+                        v.innerHTML = `\n    <div>변환 결과: ${a} → ${f} (${m}%)</div>\n    <div>변환 시간: ${d}</div>\n    `,
                         this.convertResultEl.appendChild(v);
                     const p = function (e, t) {
                         const n = new Blob([t])
@@ -317,7 +317,7 @@
                         i.href = r;
                         const s = o.getFilenameSuffix(t);
                         return i.download = `${e}.${s}`,
-                            i.innerHTML = `Download ${e}.${s}`,
+                            i.innerHTML = `${e}.${s} 다운로드`,
                             i
                     }(function (e) {
                         const t = e.lastIndexOf(".");
@@ -423,7 +423,7 @@
         function c() {
             return r(this, void 0, void 0, (function* () {
                 return s || (s = yield new Promise((e, t) => {
-                    const n = new Worker("worker.js")
+                    const n = new Worker('/js/worker.js')
                         , r = setTimeout(() => t(new Error("Worker time out")), i);
                     n.postMessage("init");
                     const s = i => {
