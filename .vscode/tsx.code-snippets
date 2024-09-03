@@ -1,0 +1,9 @@
+{
+	"Next.js i18n snippet": {
+		"prefix": "translate",
+		"body": [
+			"{t('$1')}"
+		],
+		"description": "Insert Next.js i18n translation snippet"
+	}
+}

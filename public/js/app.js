@@ -317,7 +317,7 @@
                         i.href = r;
                         const s = o.getFilenameSuffix(t);
                         return i.download = `${e}.${s}`,
-                            i.innerHTML = `${e}.${s} 다운로드`,
+                            i.innerHTML = `${e}.${s}`,
                             i
                     }(function (e) {
                         const t = e.lastIndexOf(".");

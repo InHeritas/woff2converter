@@ -1,0 +1,18 @@
+{
+    "pageTitle": "WOFF2 Converter",
+    "description": "Easily convert your TTF and OTF font files to WOFF2 format.",
+    "fileAlertTitle": "Heads up!",
+    "fileAlertMessage": "Don't worry, your files aren't uploaded or stored on our server.",
+    "ios18AlertTitle": "iOS 18 Safari Font Saving Issue",
+    "ios18AlertMessage1": "Safari on iOS 18 has a known issue where saving large files can cause errors.",
+    "ios18AlertMessage2": "To avoid this, try converting your TTF or OTF files to a smaller WOFF2 format using the tool below.",
+    "ios18AlertMessage3": "If your file is larger than 10MB, it might still not work after conversion. In that case, please consider using a different font.",
+    "selectFiles": "Choose Font Files",
+    "convert": "Start Conversion",
+    "processing": "Hang tight, we're processing...",
+    "timeNotice1": "For larger fonts (several MB or more),",
+    "timeNotice2": "the conversion may take up to 1 minute.",
+    "support": "Need help?",
+    "footer1": "This tool is here to help MyType users.",
+    "footer2": "Got questions? Just click the link above."
+}
