@@ -8,8 +8,8 @@ const Header: React.FC = () => {
 
     return (
         <header>
-            <div className='text-xl font-bold m-5'>{t('pageTitle')}</div>
-            <div>
+            {/* <div className='text-xl font-bold m-5'>{t('pageTitle')}</div> */}
+            <div className='mt-5'>
                 {t('description')}
             </div>
             <br />

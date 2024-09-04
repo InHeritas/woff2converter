@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
         <footer className="container">
             <a href="https://www.inheritas.dev/mytype/support" className='underline'>{t('support')}</a>
             <div className='text-sm mt-3'>
-                ❤
+            ♥    
                 <br />
                 {t('footer1')}
                 <br />
