@@ -313,12 +313,29 @@
                     const p = function (e, t) {
                         const n = new Blob([t])
                             , r = URL.createObjectURL(n)
-                            , i = document.createElement("a");
+                            , i = document.createElement("a")
+                            , downloadButton = document.createElement("button");
                         i.href = r;
+                        downloadButton.className = "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 shadow h-9 px-4 py-2 bg-blue-500 text-white hover:bg-blue-600"
                         const s = o.getFilenameSuffix(t);
-                        return i.download = `${e}.${s}`,
-                            i.innerHTML = `${e}.${s}`,
-                            i
+                        i.download = `${e}.${s}`;
+                        i.innerHTML = `${e}.${s}`;
+                        const svgElement = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+                        svgElement.setAttribute("width", "15");
+                        svgElement.setAttribute("height", "15");
+                        svgElement.setAttribute("viewBox", "0 0 15 15");
+                        svgElement.setAttribute("fill", "none");
+                        svgElement.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+                        svgElement.setAttribute("class", "mr-3 h-4 w-4");
+                        const pathElement = document.createElementNS("http://www.w3.org/2000/svg", "path");
+                        pathElement.setAttribute("d", "M7.50005 1.04999C7.74858 1.04999 7.95005 1.25146 7.95005 1.49999V8.41359L10.1819 6.18179C10.3576 6.00605 10.6425 6.00605 10.8182 6.18179C10.994 6.35753 10.994 6.64245 10.8182 6.81819L7.81825 9.81819C7.64251 9.99392 7.35759 9.99392 7.18185 9.81819L4.18185 6.81819C4.00611 6.64245 4.00611 6.35753 4.18185 6.18179C4.35759 6.00605 4.64251 6.00605 4.81825 6.18179L7.05005 8.41359V1.49999C7.05005 1.25146 7.25152 1.04999 7.50005 1.04999ZM2.5 10C2.77614 10 3 10.2239 3 10.5V12C3 12.5539 3.44565 13 3.99635 13H11.0012C11.5529 13 12 12.5528 12 12V10.5C12 10.2239 12.2239 10 12.5 10C12.7761 10 13 10.2239 13 10.5V12C13 13.1041 12.1062 14 11.0012 14H3.99635C2.89019 14 2 13.103 2 12V10.5C2 10.2239 2.22386 10 2.5 10Z");
+                        pathElement.setAttribute("fill", "currentColor");
+                        pathElement.setAttribute("fill-rule", "evenodd");
+                        pathElement.setAttribute("clip-rule", "evenodd");
+                        svgElement.appendChild(pathElement);
+                        downloadButton.appendChild(svgElement);
+                        downloadButton.appendChild(i);
+                        return downloadButton
                     }(function (e) {
                         const t = e.lastIndexOf(".");
                         return -1 === t ? e : e.substr(0, t)
